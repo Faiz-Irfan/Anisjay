@@ -902,6 +902,162 @@
             letter-spacing: 1px
         }
 
+        /* Ratecard */
+        .ratecard {
+            background: #141416;
+            border-top: 1px solid var(--line)
+        }
+
+        .ratecard-intro {
+            display: grid;
+            grid-template-columns: 1.05fr .95fr;
+            gap: 50px;
+            align-items: end;
+            margin-bottom: 56px
+        }
+
+        .ratecard-intro .section-title {
+            margin-bottom: 0
+        }
+
+        .rate-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            align-items: stretch
+        }
+
+        .rate-card {
+            background: var(--bg);
+            border: 1px solid var(--line);
+            padding: 32px 28px;
+            display: flex;
+            flex-direction: column;
+            transition: border-color .25s, transform .25s
+        }
+
+        .rate-card:hover {
+            border-color: var(--red);
+            transform: translateY(-3px)
+        }
+
+        .rate-card-head {
+            margin-bottom: 22px;
+            padding-bottom: 18px;
+            border-bottom: 1px solid var(--line)
+        }
+
+        .rate-card-head h3 {
+            font-size: 34px;
+            margin: 10px 0 0;
+            line-height: 1
+        }
+
+        .rate-sub {
+            margin: 6px 0 0;
+            font-size: 12px;
+            color: var(--muted);
+            letter-spacing: .5px
+        }
+
+        .rate-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            flex: 1
+        }
+
+        .rate-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 14px;
+            padding-bottom: 12px;
+            border-bottom: 1px dashed #ffffff17;
+            font-size: 14px;
+            line-height: 1.4
+        }
+
+        .rate-item:last-child {
+            border-bottom: 0;
+            padding-bottom: 0
+        }
+
+        .rate-label {
+            color: #e2dfd9;
+            font-weight: 500
+        }
+
+        .rate-label small {
+            display: block;
+            color: var(--muted);
+            font-size: 11px;
+            margin-top: 2px;
+            font-weight: 400
+        }
+
+        .rate-price {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: .5px;
+            color: var(--red);
+            white-space: nowrap;
+            text-transform: uppercase
+        }
+
+        .rate-enquiries {
+            margin-top: 32px;
+            background: var(--bg);
+            border: 1px solid var(--line);
+            padding: 26px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+            flex-wrap: wrap
+        }
+
+        .rate-enquiries-label {
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            color: var(--red)
+        }
+
+        .rate-enquiries-links {
+            display: flex;
+            align-items: center;
+            gap: 14px 32px;
+            flex-wrap: wrap
+        }
+
+        .rate-enquiries-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--cream);
+            transition: color .2s
+        }
+
+        .rate-enquiries-links a:hover {
+            color: var(--red)
+        }
+
+        .rate-enquiries-links small {
+            font-size: 10px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--muted);
+            font-weight: 800
+        }
+
         /* Contact */
         .contact {
             background: var(--red);
@@ -1200,11 +1356,13 @@
 
             .about-layout,
             .collab-intro,
+            .ratecard-intro,
             .contact-layout {
                 gap: 40px
             }
 
-            .collab-services {
+            .collab-services,
+            .rate-grid {
                 grid-template-columns: 1fr 1fr
             }
 
@@ -1395,6 +1553,7 @@
 
             .about-layout,
             .collab-intro,
+            .ratecard-intro,
             .contact-layout {
                 grid-template-columns: 1fr
             }
@@ -1424,8 +1583,32 @@
             }
 
             .services,
-            .collab-services {
+            .collab-services,
+            .rate-grid {
                 grid-template-columns: 1fr
+            }
+
+            .ratecard-intro {
+                margin-bottom: 36px
+            }
+
+            .rate-card {
+                padding: 24px 20px
+            }
+
+            .rate-card-head h3 {
+                font-size: 30px
+            }
+
+            .rate-enquiries {
+                padding: 20px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px
+            }
+
+            .rate-enquiries-links {
+                gap: 12px 24px
             }
 
             .services {
@@ -1571,6 +1754,7 @@
                 <a href="#coaching">Train With Jay</a>
                 <a href="#content">Content</a>
                 <a href="#collab">Brand Collabs</a>
+                <a href="#ratecard">Rate Card</a>
                 <a href="#contact">Contact</a>
             </nav>
             <a class="btn nav-cta" href="#contact">WORK WITH ME ↗</a>
@@ -1865,18 +2049,209 @@
             </div>
         </section>
 
+        <!-- RATE CARD -->
+        <section class="ratecard" id="ratecard">
+            <div class="container">
+                <div class="ratecard-intro reveal">
+                    <div>
+                        <div class="section-kicker">06 / CREATOR RATE CARD · @JAYZSKYWALKER</div>
+                        <h2 class="section-title">RATES &amp;<br><span class="accent">PACKAGES.</span></h2>
+                    </div>
+                    <p class="section-text">A dynamic content creator based in <strong>Johor Bahru, Johor</strong> with
+                        a strong focus on <strong>fitness and sports, beauty, lifestyle, and wellness</strong>.
+                        Passionate about producing impactful, visually compelling content and delivering creative brand
+                        collaborations that captivate audiences and strengthen brand presence across digital platforms.</p>
+                </div>
+
+                <div class="rate-grid">
+                    <!-- 01 General Rates -->
+                    <div class="rate-card reveal">
+                        <div class="rate-card-head">
+                            <div class="service-index">01 / DELIVERABLES</div>
+                            <h3>GENERAL RATES</h3>
+                        </div>
+                        <ul class="rate-list">
+                            <li class="rate-item">
+                                <span class="rate-label">TikTok</span>
+                                <span class="rate-price">RM2,500</span>
+                            </li>
+                            <li class="rate-item">
+                                <span class="rate-label">Instagram Reels</span>
+                                <span class="rate-price">RM500</span>
+                            </li>
+                            <li class="rate-item">
+                                <span class="rate-label">TikTok Sync IG Reels</span>
+                                <span class="rate-price">RM3,000</span>
+                            </li>
+                            <li class="rate-item">
+                                <span class="rate-label">Instagram Feed (3 Max)</span>
+                                <span class="rate-price">RM600</span>
+                            </li>
+                            <li class="rate-item">
+                                <span class="rate-label">Instagram Story</span>
+                                <span class="rate-price">RM50</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 02 Appearance -->
+                    <div class="rate-card reveal">
+                        <div class="rate-card-head">
+                            <div class="service-index">02 / ON-SITE SHOOTING</div>
+                            <h3>APPEARANCE</h3>
+                            <p class="rate-sub">Event / Store / Property</p>
+                        </div>
+                        <ul class="rate-list">
+                            <li class="rate-item">
+                                <span class="rate-label">TikTok</span>
+                                <span class="rate-price">RM3,000</span>
+                            </li>
+                            <li class="rate-item">
+                                <span class="rate-label">Instagram Reels</span>
+                                <span class="rate-price">RM500</span>
+                            </li>
+                            <li class="rate-item">
+                                <span class="rate-label">TikTok Sync IG Reels<small>FREE 3 IG Stories</small></span>
+                                <span class="rate-price">RM4,000</span>
+                            </li>
+                            <li class="rate-item">
+                                <span class="rate-label">Instagram Feed (3 Max)</span>
+                                <span class="rate-price">RM500</span>
+                            </li>
+                            <li class="rate-item">
+                                <span class="rate-label">Instagram Story</span>
+                                <span class="rate-price">RM50</span>
+                            </li>
+                            <li class="rate-item">
+                                <span class="rate-label">Requires Travel<small>More than 50km</small></span>
+                                <span class="rate-price">RM1,000</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 03 UGC -->
+                    <div class="rate-card reveal">
+                        <div class="rate-card-head">
+                            <div class="service-index">03 / BRAND ASSETS</div>
+                            <h3>UGC</h3>
+                        </div>
+                        <ul class="rate-list">
+                            <li class="rate-item">
+                                <span class="rate-label">1 Video</span>
+                                <span class="rate-price">RM1,800</span>
+                            </li>
+                            <li class="rate-item">
+                                <span class="rate-label">2 Videos</span>
+                                <span class="rate-price">RM3,000</span>
+                            </li>
+                            <li class="rate-item">
+                                <span class="rate-label">3 Videos</span>
+                                <span class="rate-price">RM4,500</span>
+                            </li>
+                            <li class="rate-item">
+                                <span class="rate-label">Raw Footages</span>
+                                <span class="rate-price">50% Video Cost</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 04 Usage Rights -->
+                    <div class="rate-card reveal">
+                        <div class="rate-card-head">
+                            <div class="service-index">04 / LICENSING</div>
+                            <h3>USAGE RIGHTS</h3>
+                        </div>
+                        <ul class="rate-list">
+                            <li class="rate-item">
+                                <span class="rate-label">30 Days Usage</span>
+                                <span class="rate-price">10% Base Rate</span>
+                            </li>
+                            <li class="rate-item">
+                                <span class="rate-label">90 Days Usage</span>
+                                <span class="rate-price">15% Base Rate</span>
+                            </li>
+                            <li class="rate-item">
+                                <span class="rate-label">6 Months Usage</span>
+                                <span class="rate-price">30% Base Rate</span>
+                            </li>
+                            <li class="rate-item">
+                                <span class="rate-label">Full Usage<small>365 Days</small></span>
+                                <span class="rate-price">50% Base Rate</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 05 Exclusivity -->
+                    <div class="rate-card reveal">
+                        <div class="rate-card-head">
+                            <div class="service-index">05 / CATEGORY LOCK</div>
+                            <h3>EXCLUSIVITY</h3>
+                        </div>
+                        <ul class="rate-list">
+                            <li class="rate-item">
+                                <span class="rate-label">30 Days Usage</span>
+                                <span class="rate-price">50% Base Rate</span>
+                            </li>
+                            <li class="rate-item">
+                                <span class="rate-label">90 Days Usage</span>
+                                <span class="rate-price">70% Base Rate</span>
+                            </li>
+                            <li class="rate-item">
+                                <span class="rate-label">6 Months Usage</span>
+                                <span class="rate-price">80% Base Rate</span>
+                            </li>
+                            <li class="rate-item">
+                                <span class="rate-label">Full Usage<small>365 Days</small></span>
+                                <span class="rate-price">3x Total Rate</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 06 Amendment -->
+                    <div class="rate-card reveal">
+                        <div class="rate-card-head">
+                            <div class="service-index">06 / REVISIONS</div>
+                            <h3>AMENDMENT</h3>
+                        </div>
+                        <ul class="rate-list">
+                            <li class="rate-item">
+                                <span class="rate-label">Minor (2x Max)</span>
+                                <span class="rate-price">FREE</span>
+                            </li>
+                            <li class="rate-item">
+                                <span class="rate-label">Major</span>
+                                <span class="rate-price">RM500</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="rate-enquiries reveal">
+                    <div class="rate-enquiries-label">FOR BUSINESS ENQUIRIES &amp; COLLABORATIONS</div>
+                    <div class="rate-enquiries-links">
+                        <a href="https://www.tiktok.com/@jayzskywalker" target="_blank" rel="noopener"><small>TIKTOK</small> @jayzskywalker ↗</a>
+                        <a href="https://www.instagram.com/jayzskywalker" target="_blank" rel="noopener"><small>IG</small> @jayzskywalker ↗</a>
+                        <a href="mailto:nisjay1811@gmail.com"><small>EMAIL</small> nisjay1811@gmail.com ↗</a>
+                        <a href="https://wa.me/60187911624?text=Hi%20Jay!%20I%27d%20like%20to%20enquire%20about%20a%20brand%20collaboration."
+                            target="_blank" rel="noopener"><small>TEL / WA</small> +60 18-791 1624 ↗</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- CONTACT -->
         <section class="contact" id="contact">
             <div class="container">
-                <div class="section-kicker">06 / GET IN TOUCH</div>
+                <div class="section-kicker">07 / GET IN TOUCH</div>
                 <h2 class="section-title">LET'S MAKE<br>IT <span style="color:#fff">MOVE.</span></h2>
                 <div class="contact-layout">
                     <div>
                         <p class="contact-copy">Booking a training session or pitching a campaign? Send a few details
                             and it'll open straight in WhatsApp.</p>
                         <div class="contact-lines">
-                            <a href="https://wa.me/60187911624" target="_blank" rel="noopener"><span><small>WHATSAPP</small><br>018-791
+                            <a href="https://wa.me/60187911624" target="_blank" rel="noopener"><span><small>WHATSAPP</small><br>+60 18-791
                                     1624</span><span>↗</span></a>
+                            <a href="mailto:nisjay1811@gmail.com"><span><small>EMAIL</small><br>nisjay1811@gmail.com</span><span>↗</span></a>
                             <a href="https://www.tiktok.com/@jayzskywalker" target="_blank"
                                 rel="noopener"><span><small>TIKTOK</small><br>@jayzskywalker</span><span>↗</span></a>
                             <a href="https://www.instagram.com/jayzskywalker" target="_blank"
