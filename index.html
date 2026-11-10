@@ -1,0 +1,1987 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="theme-color" content="#0d0d0f">
+    <meta name="description"
+        content="Anis Jay (@jayzskywalker) — female personal trainer at Anytime Fitness R&F Mall, Johor Bahru and fitness • beauty • wellness creator with 172K TikTok followers. Book a session or collaborate.">
+    <meta property="og:title" content="ANIS JAY — Female Trainer & Fitness Creator, Johor Bahru">
+    <meta property="og:description"
+        content="Fat loss, muscle building, toning & strength coaching in JB. 172K on TikTok. Open for PR & brand collabs.">
+    <meta property="og:image" content="assets/hero-vehicle-pull.jpg">
+    <meta property="og:type" content="website">
+    <title>ANIS JAY — Female Trainer & Fitness Creator | @jayzskywalker</title>
+    <link rel="icon" href="assets/profile.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0d0d0f;
+            --surface: #17171a;
+            --line: #353538;
+            --red: #f34b46;
+            --cream: #f5f1e9;
+            --muted: #a5a3a2;
+            --wa: #25d366
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+            overflow-x: clip
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--cream);
+            font-family: 'DM Sans', sans-serif;
+            overflow-x: clip;
+            -webkit-font-smoothing: antialiased
+        }
+
+        img {
+            max-width: 100%;
+            display: block
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none
+        }
+
+        button,
+        input,
+        textarea,
+        select {
+            font: inherit
+        }
+
+        button {
+            cursor: pointer
+        }
+
+        h1,
+        h2,
+        h3,
+        .logo,
+        .stat-number {
+            font-family: 'Barlow Condensed', Impact, sans-serif;
+            font-weight: 800;
+            text-transform: uppercase
+        }
+
+        ::selection {
+            background: var(--red);
+            color: #fff
+        }
+
+        :focus-visible {
+            outline: 2px solid var(--red);
+            outline-offset: 3px
+        }
+
+        .container {
+            width: min(1280px, calc(100% - 9vw));
+            margin: auto
+        }
+
+        .topline {
+            height: 4px;
+            background: var(--red);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 21
+        }
+
+        /* ---------- HEADER ---------- */
+        header {
+            position: fixed;
+            top: 4px;
+            left: 0;
+            right: 0;
+            z-index: 20;
+            background: rgba(13, 13, 15, .82);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border-bottom: 1px solid rgba(255, 255, 255, .11)
+        }
+
+        .nav {
+            height: 76px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px
+        }
+
+        .logo {
+            font-size: 32px;
+            letter-spacing: -1px;
+            white-space: nowrap
+        }
+
+        .dot,
+        .accent {
+            color: var(--red)
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 32px
+        }
+
+        nav a {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            transition: color .2s
+        }
+
+        nav a:hover {
+            color: var(--red)
+        }
+
+        .btn {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            padding: 17px 24px;
+            min-height: 48px;
+            background: var(--red);
+            color: #fff;
+            border: 1px solid var(--red);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            transition: transform .25s, background .25s, color .25s
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            background: #d93834
+        }
+
+        .btn-outline {
+            background: transparent;
+            border-color: #777
+        }
+
+        .btn-outline:hover {
+            background: #fff;
+            color: #111
+        }
+
+        .btn-wa {
+            background: var(--wa);
+            border-color: var(--wa);
+            color: #0b2b16
+        }
+
+        .btn-wa:hover {
+            background: #1ebe5a
+        }
+
+        .btn svg {
+            width: 18px;
+            height: 18px;
+            flex: none
+        }
+
+        .nav-cta {
+            padding: 13px 19px
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: 0;
+            color: #fff;
+            font-size: 26px;
+            width: 48px;
+            height: 48px;
+            margin-right: -10px
+        }
+
+        /* ---------- HERO ---------- */
+        .hero {
+            min-height: 720px;
+            height: 100svh;
+            max-height: 1000px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            overflow: hidden
+        }
+
+        .hero-image {
+            position: absolute;
+            inset: 0;
+            transform: scale(1.06);
+            animation: zoomout 2s ease forwards
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 22% 60%
+        }
+
+        .hero-image:after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(270deg, #0d0d0f 6%, rgba(13, 13, 15, .9) 34%, rgba(13, 13, 15, .25) 72%, rgba(13, 13, 15, .35)), linear-gradient(0deg, #0d0d0f, transparent 28%)
+        }
+
+        .hero-credit {
+            position: absolute;
+            left: 4.5vw;
+            top: 100px;
+            z-index: 2;
+            font-size: 10px;
+            letter-spacing: 1.5px;
+            color: #ffffffa8;
+            text-transform: uppercase
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            padding-top: 85px;
+            display: flex;
+            justify-content: flex-end
+        }
+
+        .hero-copy {
+            max-width: 620px
+        }
+
+        .eyebrow {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #eee;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            text-transform: uppercase
+        }
+
+        .eyebrow:before {
+            content: '';
+            display: block;
+            width: 35px;
+            height: 3px;
+            background: var(--red);
+            flex: none
+        }
+
+        h1 {
+            font-size: clamp(76px, 9.6vw, 160px);
+            line-height: .8;
+            letter-spacing: -.03em;
+            margin: 32px 0 28px
+        }
+
+        h1 span {
+            display: block
+        }
+
+        h1 .outline {
+            -webkit-text-stroke: 2px var(--cream);
+            color: transparent
+        }
+
+        h1 .red {
+            color: var(--red)
+        }
+
+        .hero-desc {
+            max-width: 480px;
+            color: #d2d0cd;
+            line-height: 1.75;
+            font-size: 15px;
+            margin: 0 0 32px
+        }
+
+        .hero-desc strong {
+            color: #fff
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap
+        }
+
+        .hero-bottom {
+            position: absolute;
+            bottom: 30px;
+            left: 4.5vw;
+            right: 4.5vw;
+            z-index: 2;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            font-size: 11px;
+            letter-spacing: 2px;
+            font-weight: 700;
+            color: #bbb
+        }
+
+        /* ---------- MARQUEE ---------- */
+        .marquee {
+            background: var(--red);
+            color: #111;
+            overflow: hidden;
+            white-space: nowrap;
+            padding: 16px 0;
+            transform: rotate(-1.5deg) scale(1.03);
+            position: relative;
+            z-index: 2
+        }
+
+        .marquee-track {
+            display: flex;
+            gap: 35px;
+            width: max-content;
+            animation: marquee 26s linear infinite;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 26px;
+            font-weight: 900;
+            letter-spacing: 2px
+        }
+
+        .marquee span {
+            display: inline-flex;
+            gap: 35px;
+            align-items: center
+        }
+
+        .marquee b {
+            font-size: 16px
+        }
+
+        /* ---------- STATS ---------- */
+        .stats {
+            padding: 90px 0 0
+        }
+
+        .numbers {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1px;
+            background: var(--line);
+            border: 1px solid var(--line)
+        }
+
+        .number-cell {
+            background: var(--bg);
+            padding: 30px 28px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            transition: background .25s
+        }
+
+        a.number-cell:hover {
+            background: #1a1a1d
+        }
+
+        .stat-number {
+            font-size: 58px;
+            color: var(--red);
+            line-height: 1
+        }
+
+        .number-cell p {
+            margin: 0;
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #aaa;
+            line-height: 1.5
+        }
+
+        /* ---------- SECTIONS ---------- */
+        section {
+            padding: 120px 0
+        }
+
+        .section-kicker {
+            font-size: 11px;
+            color: var(--red);
+            font-weight: 800;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 22px
+        }
+
+        .section-title {
+            font-size: clamp(56px, 8.4vw, 120px);
+            line-height: .86;
+            letter-spacing: -.02em;
+            margin: 0 0 32px
+        }
+
+        .section-text {
+            font-size: 16px;
+            line-height: 1.85;
+            color: #bbb;
+            max-width: 610px
+        }
+
+        .section-text strong {
+            color: var(--cream)
+        }
+
+        .note {
+            color: #8d8c8f;
+            font-size: 12px;
+            margin-top: 18px;
+            line-height: 1.6
+        }
+
+        .note a {
+            text-decoration: underline
+        }
+
+        /* About */
+        .about-layout {
+            display: grid;
+            grid-template-columns: .9fr 1.1fr;
+            gap: 8vw;
+            align-items: center
+        }
+
+        .about-media {
+            position: relative
+        }
+
+        .about-photo {
+            aspect-ratio: 4/5;
+            width: 100%;
+            object-fit: cover;
+            object-position: center 30%;
+            border: 1px solid #ffffff25
+        }
+
+        .about-tag {
+            position: absolute;
+            bottom: 22px;
+            left: 22px;
+            padding: 10px 14px;
+            background: var(--red);
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 2px
+        }
+
+        .about-avatar {
+            position: absolute;
+            top: -26px;
+            right: -26px;
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 4px solid var(--bg);
+            object-fit: cover;
+            box-shadow: 0 0 0 2px var(--red)
+        }
+
+        .facts {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1px;
+            background: var(--line);
+            border: 1px solid var(--line);
+            margin-top: 34px
+        }
+
+        .fact {
+            background: var(--bg);
+            padding: 18px 20px
+        }
+
+        .fact small {
+            display: block;
+            color: var(--red);
+            font-size: 10px;
+            letter-spacing: 2px;
+            font-weight: 800;
+            margin-bottom: 6px
+        }
+
+        .fact span {
+            font-size: 14px;
+            color: #ddd;
+            line-height: 1.5
+        }
+
+        /* Coaching */
+        .coaching {
+            background: #141416
+        }
+
+        .coach-layout {
+            display: grid;
+            grid-template-columns: 1.15fr .85fr;
+            gap: 60px;
+            align-items: start
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 44px
+        }
+
+        .service {
+            border: 1px solid var(--line);
+            padding: 30px 26px;
+            transition: background .25s, border-color .25s
+        }
+
+        .service:hover {
+            background: #1d1d20;
+            border-color: var(--red)
+        }
+
+        .service-index {
+            color: var(--red);
+            font-size: 11px;
+            letter-spacing: 2px;
+            font-weight: 800
+        }
+
+        .service h3 {
+            font-size: 34px;
+            margin: 34px 0 8px;
+            line-height: 1
+        }
+
+        .service p {
+            font-size: 13px;
+            color: #aaa;
+            line-height: 1.7;
+            margin: 0
+        }
+
+        .coach-card {
+            position: sticky;
+            top: 110px;
+            background: var(--bg);
+            border: 1px solid var(--line)
+        }
+
+        .coach-card .media {
+            position: relative;
+            aspect-ratio: 4/5;
+            overflow: hidden;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            border: 0;
+            padding: 0;
+            background: #222
+        }
+
+        .coach-card .media img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform .6s
+        }
+
+        .coach-card .media:hover img {
+            transform: scale(1.05)
+        }
+
+        .play {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 74px;
+            height: 74px;
+            border-radius: 50%;
+            background: var(--red);
+            display: grid;
+            place-items: center;
+            box-shadow: 0 0 0 10px #f34b4640
+        }
+
+        .play:after {
+            content: '';
+            border-left: 20px solid #fff;
+            border-top: 13px solid transparent;
+            border-bottom: 13px solid transparent;
+            margin-left: 5px
+        }
+
+        .media-label {
+            position: absolute;
+            left: 16px;
+            bottom: 16px;
+            background: #0d0d0fd9;
+            padding: 8px 12px;
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: #fff
+        }
+
+        .coach-body {
+            padding: 26px
+        }
+
+        .coach-body h3 {
+            font-size: 30px;
+            margin: 0 0 6px;
+            line-height: 1
+        }
+
+        .coach-body p {
+            color: #aaa;
+            font-size: 13px;
+            line-height: 1.7;
+            margin: 0 0 20px
+        }
+
+        .coach-body .btn {
+            width: 100%;
+            margin-top: 10px
+        }
+
+        /* Content */
+        .content-heading {
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            gap: 30px;
+            margin-bottom: 45px
+        }
+
+        .content-heading .section-title {
+            margin-bottom: 0
+        }
+
+        .content-layout {
+            display: grid;
+            grid-template-columns: minmax(300px, 380px) 1fr;
+            gap: 28px;
+            align-items: start
+        }
+
+        .tiktok-box {
+            background: #fff;
+            color: #111;
+            min-height: 520px;
+            position: relative;
+            overflow: hidden
+        }
+
+        .tiktok-box blockquote {
+            margin: 0 !important;
+            min-width: 0 !important;
+            max-width: 100% !important
+        }
+
+        .tiktok-fallback {
+            padding: 28px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            align-items: flex-start
+        }
+
+        .tiktok-fallback img {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            object-fit: cover
+        }
+
+        .tiktok-fallback strong {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 34px;
+            text-transform: uppercase;
+            line-height: 1
+        }
+
+        .tiktok-fallback p {
+            margin: 0;
+            color: #555;
+            font-size: 14px;
+            line-height: 1.6
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 210px;
+            gap: 12px
+        }
+
+        .shot {
+            position: relative;
+            overflow: hidden;
+            background: #222
+        }
+
+        .shot.tall {
+            grid-row: span 2
+        }
+
+        .shot.wide {
+            grid-column: span 2
+        }
+
+        .shot img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform .6s, filter .6s;
+            filter: grayscale(20%)
+        }
+
+        .shot:hover img {
+            transform: scale(1.06);
+            filter: none
+        }
+
+        .shot:after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(0deg, #0d0d0fd0, transparent 55%);
+            pointer-events: none
+        }
+
+        .shot figcaption {
+            position: absolute;
+            left: 14px;
+            right: 14px;
+            bottom: 12px;
+            z-index: 1;
+            font-size: 10px;
+            letter-spacing: 2px;
+            font-weight: 800;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: space-between;
+            gap: 10px
+        }
+
+        .shot figcaption span:last-child {
+            color: var(--red)
+        }
+
+        /* Press */
+        .press {
+            background: #141416;
+            padding: 0
+        }
+
+        .press-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: stretch
+        }
+
+        .press-img {
+            position: relative;
+            min-height: 420px
+        }
+
+        .press-img img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 20% center
+        }
+
+        .press-copy {
+            padding: 90px 6vw 90px 5vw
+        }
+
+        .press-logo {
+            display: inline-block;
+            border: 1px solid var(--line);
+            padding: 8px 14px;
+            font-size: 11px;
+            letter-spacing: 3px;
+            font-weight: 800;
+            margin-bottom: 26px
+        }
+
+        blockquote.quote {
+            margin: 0;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: clamp(30px, 3.4vw, 46px);
+            line-height: 1.05;
+            font-weight: 700;
+            text-transform: uppercase
+        }
+
+        blockquote.quote:before {
+            content: '“';
+            display: block;
+            color: var(--red);
+            font-size: 90px;
+            line-height: .6;
+            margin-bottom: 8px
+        }
+
+        .quote-ms {
+            color: #8d8c8f;
+            font-size: 13px;
+            font-style: italic;
+            line-height: 1.7;
+            margin: 20px 0 26px
+        }
+
+        /* Collab */
+        .collab-intro {
+            display: grid;
+            grid-template-columns: 1.1fr .9fr;
+            gap: 50px;
+            align-items: end
+        }
+
+        .collab-services {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 56px
+        }
+
+        .brands {
+            margin-top: 56px;
+            border-top: 1px solid var(--line);
+            padding-top: 30px;
+            display: flex;
+            align-items: center;
+            gap: 14px 40px;
+            flex-wrap: wrap
+        }
+
+        .brands small {
+            font-size: 11px;
+            letter-spacing: 3px;
+            color: #888;
+            font-weight: 800
+        }
+
+        .brand {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 30px;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: #d8d5d0;
+            letter-spacing: 1px
+        }
+
+        /* Contact */
+        .contact {
+            background: var(--red);
+            color: #101013;
+            padding: 110px 0
+        }
+
+        .contact .section-kicker {
+            color: #151515
+        }
+
+        .contact .section-title {
+            font-size: clamp(64px, 11vw, 170px)
+        }
+
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px
+        }
+
+        .contact-copy {
+            font-size: 17px;
+            line-height: 1.8;
+            max-width: 420px;
+            margin-top: 0
+        }
+
+        .contact-lines {
+            display: grid;
+            gap: 10px;
+            margin-top: 34px
+        }
+
+        .contact-lines a {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 14px;
+            border-bottom: 1px solid #1114;
+            padding: 14px 0;
+            font-weight: 700;
+            font-size: 15px;
+            transition: padding .25s
+        }
+
+        .contact-lines a:hover {
+            padding-left: 8px
+        }
+
+        .contact-lines small {
+            font-size: 10px;
+            letter-spacing: 2px;
+            font-weight: 800;
+            opacity: .75
+        }
+
+        .contact-form {
+            display: grid;
+            gap: 14px;
+            align-content: start
+        }
+
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form select {
+            width: 100%;
+            border: 1px solid #1117;
+            background: transparent;
+            padding: 17px;
+            color: #111;
+            outline: none;
+            border-radius: 0;
+            font-size: 16px;
+            -webkit-appearance: none;
+            appearance: none
+        }
+
+        .contact-form select {
+            background-image: linear-gradient(45deg, transparent 50%, #111 50%), linear-gradient(135deg, #111 50%, transparent 50%);
+            background-position: calc(100% - 22px) 50%, calc(100% - 16px) 50%;
+            background-size: 6px 6px;
+            background-repeat: no-repeat
+        }
+
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: #2c1b1b
+        }
+
+        .contact-form select option {
+            color: #111
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus,
+        .contact-form select:focus {
+            border-color: #111;
+            background-color: #ffffff1c
+        }
+
+        .btn-black {
+            background: #111;
+            color: white;
+            border-color: #111
+        }
+
+        .btn-black:hover {
+            background: #333
+        }
+
+        .form-note {
+            font-size: 11px;
+            line-height: 1.6;
+            opacity: .8
+        }
+
+        /* Footer */
+        footer {
+            padding: 45px 0 50px
+        }
+
+        .footer-layout {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap
+        }
+
+        .socials {
+            display: flex;
+            gap: 10px 22px;
+            flex-wrap: wrap
+        }
+
+        .socials a {
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 700;
+            padding: 6px 0
+        }
+
+        .socials a:hover {
+            color: var(--red)
+        }
+
+        .disclaimer {
+            font-size: 11px;
+            color: #888;
+            line-height: 1.6;
+            max-width: 440px
+        }
+
+        /* Floating WhatsApp */
+        .wa-float {
+            position: fixed;
+            right: 18px;
+            bottom: calc(18px + env(safe-area-inset-bottom));
+            z-index: 30;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            background: var(--wa);
+            display: grid;
+            place-items: center;
+            box-shadow: 0 10px 30px #0008;
+            transition: transform .25s, opacity .3s;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(20px)
+        }
+
+        .wa-float.show {
+            opacity: 1;
+            pointer-events: auto;
+            transform: none
+        }
+
+        .wa-float svg {
+            width: 30px;
+            height: 30px
+        }
+
+        /* Reveal */
+        .reveal {
+            opacity: 0;
+            transform: translateY(35px);
+            transition: opacity .8s, transform .8s
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0)
+        }
+
+        /* Modal */
+        .modal {
+            position: fixed;
+            inset: 0;
+            background: #000e;
+            z-index: 50;
+            display: none;
+            place-items: center;
+            padding: 16px
+        }
+
+        .modal.open {
+            display: grid
+        }
+
+        .modal-box {
+            background: #fff;
+            width: min(400px, 100%);
+            max-height: calc(100svh - 32px);
+            position: relative;
+            display: flex;
+            flex-direction: column
+        }
+
+        .modal-box iframe {
+            width: 100%;
+            height: min(720px, calc(100svh - 90px));
+            border: 0;
+            display: block
+        }
+
+        .modal-close {
+            position: absolute;
+            top: -14px;
+            right: -10px;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--red);
+            border: 0;
+            color: white;
+            font-size: 26px;
+            line-height: 1;
+            z-index: 2
+        }
+
+        @keyframes zoomout {
+            to {
+                transform: scale(1)
+            }
+        }
+
+        @keyframes marquee {
+            to {
+                transform: translateX(-50%)
+            }
+        }
+
+        /* ---------- TABLET ---------- */
+        @media(max-width:1024px) {
+            nav {
+                gap: 20px
+            }
+
+            .numbers {
+                grid-template-columns: 1fr 1fr
+            }
+
+            .coach-layout,
+            .content-layout {
+                grid-template-columns: 1fr
+            }
+
+            .coach-card {
+                position: static;
+                display: grid;
+                grid-template-columns: 1fr 1fr
+            }
+
+            .coach-card .media {
+                aspect-ratio: auto;
+                min-height: 420px
+            }
+
+            .coach-body {
+                align-self: center
+            }
+
+            .content-layout {
+                max-width: 760px
+            }
+
+            .tiktok-box {
+                min-height: 0
+            }
+        }
+
+        @media(max-width:900px) {
+
+            .about-layout,
+            .collab-intro,
+            .contact-layout {
+                gap: 40px
+            }
+
+            .collab-services {
+                grid-template-columns: 1fr 1fr
+            }
+
+            .press-layout {
+                grid-template-columns: 1fr
+            }
+
+            .press-img {
+                min-height: 0;
+                aspect-ratio: 16/9
+            }
+
+            .press-copy {
+                padding: 70px 4.5vw
+            }
+        }
+
+        /* ---------- NAV COLLAPSE ---------- */
+        @media(max-width:960px) {
+            .nav {
+                height: 64px
+            }
+
+            .logo {
+                font-size: 28px
+            }
+
+            .menu-toggle {
+                display: block
+            }
+
+            nav {
+                display: none;
+                position: absolute;
+                top: 64px;
+                left: 0;
+                right: 0;
+                background: #17171a;
+                padding: 10px 18px 22px;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0;
+                border-bottom: 1px solid var(--line)
+            }
+
+            nav a {
+                padding: 16px 0;
+                border-bottom: 1px solid #ffffff12;
+                font-size: 13px
+            }
+
+            nav.open {
+                display: flex
+            }
+
+            nav .btn {
+                margin-top: 14px;
+                border-bottom: 0
+            }
+
+            .nav-cta {
+                display: none
+            }
+
+            .hero-credit {
+                top: 80px
+            }
+        }
+
+        /* ---------- MOBILE ---------- */
+        @media(max-width:760px) {
+            .container {
+                width: calc(100% - 36px)
+            }
+
+            /* hero: photo on top, copy below */
+            .hero {
+                height: auto;
+                min-height: 0;
+                max-height: none;
+                display: block;
+                padding-top: 68px
+            }
+
+            .hero-image {
+                position: relative;
+                height: 46svh;
+                min-height: 300px;
+                max-height: 460px
+            }
+
+            .hero-image img {
+                object-position: 18% 55%
+            }
+
+            .hero-image:after {
+                background: linear-gradient(0deg, #0d0d0f 2%, rgba(13, 13, 15, .55) 30%, transparent 60%)
+            }
+
+            .hero-credit {
+                left: auto;
+                right: 12px;
+                top: 76px;
+                font-size: 9px
+            }
+
+            .hero-content {
+                display: block;
+                padding: 0;
+                margin-top: -70px
+            }
+
+            h1 {
+                font-size: clamp(52px, 15.5vw, 96px);
+                line-height: .86;
+                margin: 18px 0 20px
+            }
+
+            h1 span {
+                display: inline
+            }
+
+            h1 span:nth-child(odd) {
+                margin-right: .2em
+            }
+
+            h1 span:nth-child(2):after {
+                content: '\A';
+                white-space: pre
+            }
+
+            h1 .outline {
+                -webkit-text-stroke-width: 1.5px
+            }
+
+            .hero-desc {
+                font-size: 15px;
+                margin-bottom: 26px
+            }
+
+            .hero-actions .btn {
+                flex: 1 1 100%
+            }
+
+            .hero-bottom {
+                position: static;
+                padding: 36px 18px 30px;
+                font-size: 10px;
+                letter-spacing: 1.5px
+            }
+
+            .hero-bottom span:first-child {
+                display: none
+            }
+
+            .marquee-track {
+                font-size: 21px
+            }
+
+            .stats {
+                padding-top: 70px
+            }
+
+            .number-cell {
+                padding: 20px 18px
+            }
+
+            .stat-number {
+                font-size: 44px
+            }
+
+            .number-cell p {
+                font-size: 10px;
+                letter-spacing: 1.5px
+            }
+
+            section {
+                padding: 80px 0
+            }
+
+            .section-title {
+                font-size: clamp(52px, 15vw, 88px)
+            }
+
+            .section-text {
+                font-size: 15px
+            }
+
+            .about-layout,
+            .collab-intro,
+            .contact-layout {
+                grid-template-columns: 1fr
+            }
+
+            .about-media {
+                order: 2;
+                margin-right: 14px
+            }
+
+            .about-avatar {
+                width: 84px;
+                height: 84px;
+                top: -20px;
+                right: -14px
+            }
+
+            .facts {
+                grid-template-columns: 1fr 1fr
+            }
+
+            .fact {
+                padding: 14px
+            }
+
+            .fact span {
+                font-size: 13px
+            }
+
+            .services,
+            .collab-services {
+                grid-template-columns: 1fr
+            }
+
+            .services {
+                margin-top: 30px
+            }
+
+            .service {
+                padding: 24px 20px
+            }
+
+            .service h3 {
+                margin-top: 18px;
+                font-size: 30px
+            }
+
+            .coach-card {
+                grid-template-columns: 1fr
+            }
+
+            .coach-card .media {
+                aspect-ratio: 4/5;
+                min-height: 0
+            }
+
+            .coach-body {
+                padding: 22px 20px
+            }
+
+            .content-heading {
+                align-items: start;
+                flex-direction: column;
+                gap: 0;
+                margin-bottom: 32px
+            }
+
+            .gallery {
+                grid-template-columns: 1fr 1fr;
+                grid-auto-rows: 170px;
+                gap: 8px
+            }
+
+            .shot.wide {
+                grid-column: span 2
+            }
+
+            .shot figcaption {
+                font-size: 9px;
+                left: 10px;
+                right: 10px;
+                bottom: 9px
+            }
+
+            .press-copy {
+                padding: 56px 18px 64px
+            }
+
+            .brand {
+                font-size: 24px
+            }
+
+            .brands {
+                gap: 10px 26px
+            }
+
+            .brands small {
+                flex-basis: 100%
+            }
+
+            .contact {
+                padding: 80px 0 100px
+            }
+
+            .contact .section-title {
+                font-size: clamp(60px, 17vw, 110px)
+            }
+
+            .contact-copy {
+                font-size: 16px
+            }
+
+            .footer-layout {
+                align-items: start;
+                flex-direction: column
+            }
+
+            footer {
+                padding-bottom: 100px
+            }
+
+            .modal-close {
+                top: 8px;
+                right: 8px
+            }
+        }
+
+        @media(max-width:360px) {
+            .container {
+                width: calc(100% - 28px)
+            }
+
+            .facts {
+                grid-template-columns: 1fr
+            }
+
+            .stat-number {
+                font-size: 38px
+            }
+        }
+
+        @media(prefers-reduced-motion:reduce) {
+            html {
+                scroll-behavior: auto
+            }
+
+            *,
+            *:before,
+            *:after {
+                animation: none !important;
+                transition: none !important
+            }
+
+            .reveal {
+                opacity: 1;
+                transform: none
+            }
+
+            .hero-image {
+                transform: none
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topline"></div>
+    <header>
+        <div class="container nav">
+            <a class="logo" href="#home" aria-label="Anis Jay — home">ANIS JAY<span class="dot">.</span></a>
+            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false"
+                aria-controls="nav">☰</button>
+            <nav id="nav">
+                <a href="#about">The Story</a>
+                <a href="#coaching">Train With Jay</a>
+                <a href="#content">Content</a>
+                <a href="#collab">Brand Collabs</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <a class="btn nav-cta" href="#contact">WORK WITH ME ↗</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero" id="home">
+            <div class="hero-image">
+                <img src="assets/hero-vehicle-pull.jpg" alt="Anis Jay pulling a 4WD pickup truck with a strap"
+                    fetchpriority="high" width="1200" height="630">
+            </div>
+            <span class="hero-credit">Photo: Harian Metro</span>
+            <div class="container hero-content">
+                <div class="hero-copy">
+                    <div class="eyebrow">Female Trainer · Johor Bahru</div>
+                    <h1><span>STRONGER</span><span class="outline">THAN</span><span class="red">YOU</span><span>THINK.</span></h1>
+                    <p class="hero-desc">Hi, I'm <strong>Jay</strong>. I'm a female personal trainer at <strong>Anytime
+                            Fitness R&amp;F Mall, JB</strong> and a fitness • beauty • wellness creator with
+                        <strong>172K followers on TikTok</strong>. I've pulled a 4WD, and I can help you get strong too.</p>
+                    <div class="hero-actions">
+                        <a href="https://wa.me/60187911624?text=Hi%20Jay!%20I%27m%20interested%20in%20personal%20training%20at%20Anytime%20Fitness%20R%26F%20Mall."
+                            class="btn btn-wa" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4c-1-1.6-1.5-3.4-1.5-5.2 0-5.4 4.4-9.8 9.8-9.8 2.6 0 5.1 1 6.9 2.9 1.9 1.9 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2C18.1 1.3 15.2.1 12 .1 5.5.1.2 5.4.2 11.9c0 2.1.5 4.1 1.6 5.9L.1 24l6.3-1.7c1.7.9 3.7 1.4 5.6 1.4 6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.4-8.3z" />
+                            </svg>BOOK A SESSION</a>
+                        <a href="#collab" class="btn btn-outline">BRAND COLLAB ↗</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-bottom"><span>SCROLL TO EXPLORE ↓</span><span>FITNESS · BEAUTY · WELLNESS</span></div>
+        </section>
+
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee-track">
+                <span>FAT LOSS <b>✳</b> MUSCLE BUILDING <b>✳</b> TONING UP <b>✳</b> STRENGTH <b>✳</b> JOM TRAIN
+                    <b>✳</b></span>
+                <span>FAT LOSS <b>✳</b> MUSCLE BUILDING <b>✳</b> TONING UP <b>✳</b> STRENGTH <b>✳</b> JOM TRAIN
+                    <b>✳</b></span>
+            </div>
+        </div>
+
+        <!-- STATS -->
+        <div class="stats">
+            <div class="container">
+                <div class="numbers reveal">
+                    <a class="number-cell" href="https://www.tiktok.com/@jayzskywalker" target="_blank" rel="noopener">
+                        <div class="stat-number">172K</div>
+                        <p>TikTok followers ↗</p>
+                    </a>
+                    <a class="number-cell" href="https://www.instagram.com/jayzskywalker" target="_blank"
+                        rel="noopener">
+                        <div class="stat-number">1.7K</div>
+                        <p>Instagram followers ↗</p>
+                    </a>
+                    <div class="number-cell">
+                        <div class="stat-number">4</div>
+                        <p>Training focuses: fat loss, muscle, tone, strength</p>
+                    </div>
+                    <a class="number-cell"
+                        href="https://www.hmetro.com.my/mutakhir/2025/02/1183306/anis-jay-seronok-uji-had-diri-seorang-wanita"
+                        target="_blank" rel="noopener">
+                        <div class="stat-number">PRESS</div>
+                        <p>Featured in Harian Metro ↗</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <div class="container about-layout">
+                <div class="about-media reveal">
+                    <img class="about-photo" src="assets/portrait-raya.jpg" alt="Portrait of Anis Jay" loading="lazy"
+                        width="640" height="640">
+                    <img class="about-avatar" src="assets/profile.jpg" alt="" loading="lazy" width="320"
+                        height="320">
+                    <span class="about-tag">01 / THE STORY</span>
+                </div>
+                <div class="reveal">
+                    <div class="section-kicker">01 / THE STORY</div>
+                    <h2 class="section-title">THE NAME<br>IS <span class="accent">JAY.</span></h2>
+                    <p class="section-text">I'm <strong>Nur Anis Mohd Faruk</strong>, a Johor girl and the youngest of
+                        four. My abah gave me the nickname "Jay" after bodybuilding legend <strong>Jay Cutler</strong>.
+                        His journey is what got me into the gym in the first place.</p>
+                    <p class="section-text">My family didn't support it at first, and plenty of people still think
+                        lifting makes a woman "less pretty" or weak. I kept training anyway, worked on my technique,
+                        and they came around once they saw what it did for me. Now I coach men and women to do the same.</p>
+                    <div class="facts">
+                        <div class="fact"><small>BASED IN</small><span>Johor Bahru, Malaysia</span></div>
+                        <div class="fact"><small>TRAINS AT</small><span>Anytime Fitness R&amp;F Mall</span></div>
+                        <div class="fact"><small>FAV SPLIT</small><span>Push · Pull · Legs</span></div>
+                        <div class="fact"><small>NEXT GOAL</small><span>Compete on the bodybuilding stage</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COACHING -->
+        <section class="coaching" id="coaching">
+            <div class="container coach-layout">
+                <div>
+                    <div class="reveal">
+                        <div class="section-kicker">02 / TRAIN WITH JAY</div>
+                        <h2 class="section-title">NO IDEA<br>WHERE TO<br><span class="accent">START?</span></h2>
+                        <p class="section-text">Lots of people walk into the gym and still don't know where to start.
+                            That's where I come in. I'm a <strong>female trainer at Anytime Fitness R&amp;F Mall,
+                                Johor Bahru</strong>, and I coach both men and women toward their goals.</p>
+                    </div>
+                    <div class="services">
+                        <div class="service reveal">
+                            <div class="service-index">01 /</div>
+                            <h3>FAT LOSS</h3>
+                            <p>Training and nutrition habits you can stick to, so the results stay.</p>
+                        </div>
+                        <div class="service reveal">
+                            <div class="service-index">02 /</div>
+                            <h3>MUSCLE BUILDING</h3>
+                            <p>Progressive strength programming with enough protein and recovery to build muscle.</p>
+                        </div>
+                        <div class="service reveal">
+                            <div class="service-index">03 /</div>
+                            <h3>TONING UP</h3>
+                            <p>Shape and definition, with form coaching on every rep.</p>
+                        </div>
+                        <div class="service reveal">
+                            <div class="service-index">04 /</div>
+                            <h3>STRENGTH</h3>
+                            <p>Lift heavier, safely. Good technique first, then we test your limits.</p>
+                        </div>
+                    </div>
+                </div>
+                <aside class="coach-card reveal">
+                    <button class="media" type="button" data-reel="DQwDpaDkhGZ"
+                        aria-label="Play Instagram reel of Jay coaching in the gym">
+                        <img src="assets/gym-coaching.jpg" alt="Jay coaching a client at the squat rack" loading="lazy"
+                            width="361" height="640">
+                        <span class="play" aria-hidden="true"></span>
+                        <span class="media-label">▶ WATCH: COACHING ON THE FLOOR</span>
+                    </button>
+                    <div class="coach-body">
+                        <h3>ANYTIME FITNESS<br>R&amp;F MALL, JB</h3>
+                        <p>Message me on WhatsApp for a session, or fill in the quick fitness form and I'll get back to
+                            you.</p>
+                        <a class="btn btn-wa"
+                            href="https://wa.me/60187911624?text=Hi%20Jay!%20I%27d%20like%20to%20ask%20about%20personal%20training%20sessions."
+                            target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4c-1-1.6-1.5-3.4-1.5-5.2 0-5.4 4.4-9.8 9.8-9.8 2.6 0 5.1 1 6.9 2.9 1.9 1.9 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2C18.1 1.3 15.2.1 12 .1 5.5.1.2 5.4.2 11.9c0 2.1.5 4.1 1.6 5.9L.1 24l6.3-1.7c1.7.9 3.7 1.4 5.6 1.4 6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.4-8.3z" />
+                            </svg>WHATSAPP 018-791 1624</a>
+                        <a class="btn btn-outline"
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSewb5W4ypNCECdoBCi6msXKhIf2hE1NRcVQhzmwp4KKVQqkFQ/viewform"
+                            target="_blank" rel="noopener">FITNESS JOURNEY FORM ↗</a>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- CONTENT -->
+        <section id="content">
+            <div class="container">
+                <div class="content-heading reveal">
+                    <div>
+                        <div class="section-kicker">03 / THE CONTENT</div>
+                        <h2 class="section-title">GYM DAYS.<br><span class="accent">GLAM DAYS.</span></h2>
+                    </div>
+                    <p class="section-text">Fitness, beauty and wellness. Training content plus the everyday glam
+                        that 172K people follow on TikTok.</p>
+                </div>
+                <div class="content-layout">
+                    <div class="tiktok-box reveal" id="tiktokBox">
+                        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@jayzskywalker"
+                            data-unique-id="jayzskywalker" data-embed-type="creator">
+                            <section class="tiktok-fallback">
+                                <img src="assets/profile.jpg" alt="" width="72" height="72">
+                                <strong>@jayzskywalker</strong>
+                                <p>172K followers · fitness • beauty • wellness. Loading latest TikToks…</p>
+                                <a class="btn" href="https://www.tiktok.com/@jayzskywalker?refer=creator_embed"
+                                    target="_blank" rel="noopener">WATCH ON TIKTOK ↗</a>
+                            </section>
+                        </blockquote>
+                    </div>
+                    <div class="gallery">
+                        <figure class="shot tall reveal" style="margin:0">
+                            <a href="https://www.instagram.com/p/DfdYzJxkqba/" target="_blank" rel="noopener">
+                                <img src="assets/night-out.jpg" alt="Jay in a leopard print hijab and orange top"
+                                    loading="lazy"></a>
+                            <figcaption><span>Latest post</span><span>IG ↗</span></figcaption>
+                        </figure>
+                        <figure class="shot reveal" style="margin:0">
+                            <a href="https://www.instagram.com/p/Cf058KHOHJb/" target="_blank" rel="noopener">
+                                <img src="assets/beauty-closeup.jpg" alt="Beauty close-up of Jay in a white hijab"
+                                    loading="lazy"></a>
+                            <figcaption><span>Beauty</span><span>IG ↗</span></figcaption>
+                        </figure>
+                        <figure class="shot tall reveal" style="margin:0">
+                            <a href="https://www.instagram.com/p/DRU8PmVEgQZ/" target="_blank" rel="noopener">
+                                <img src="assets/convocation.jpg" alt="Jay in convocation robes" loading="lazy"></a>
+                            <figcaption><span>Convo day</span><span>IG ↗</span></figcaption>
+                        </figure>
+                        <figure class="shot reveal" style="margin:0">
+                            <a href="https://www.instagram.com/p/C6DJSWVpIcf/" target="_blank" rel="noopener">
+                                <img src="assets/raya-floral.jpg" alt="Jay in a floral baju kurung for Raya"
+                                    loading="lazy"></a>
+                            <figcaption><span>Raya</span><span>IG ↗</span></figcaption>
+                        </figure>
+                        <figure class="shot reveal" style="margin:0">
+                            <a href="https://www.instagram.com/p/DLlZv0QSn97/" target="_blank" rel="noopener">
+                                <img src="assets/event-lilac.jpg" alt="Jay at an event in a lilac outfit"
+                                    loading="lazy"></a>
+                            <figcaption><span>Events</span><span>IG ↗</span></figcaption>
+                        </figure>
+                        <figure class="shot reveal" style="margin:0">
+                            <a href="https://www.instagram.com/p/C6l7us_p9KJ/" target="_blank" rel="noopener">
+                                <img src="assets/raya-red.jpg" alt="Jay in a red hijab" loading="lazy"></a>
+                            <figcaption><span>Style</span><span>IG ↗</span></figcaption>
+                        </figure>
+                        <figure class="shot wide reveal" style="margin:0">
+                            <a href="https://www.instagram.com/p/CrdqcVtJLdy/" target="_blank" rel="noopener">
+                                <img src="assets/editorial-white.jpg" alt="Jay in a white embellished outfit"
+                                    loading="lazy" style="object-position:center 25%"></a>
+                            <figcaption><span>Editorial</span><span>IG ↗</span></figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <p class="note">Photos from <a href="https://www.instagram.com/jayzskywalker" target="_blank"
+                        rel="noopener">@jayzskywalker</a> on Instagram. TikTok feed loads live from TikTok's official embed.</p>
+            </div>
+        </section>
+
+        <!-- PRESS -->
+        <section class="press" id="press">
+            <div class="press-layout">
+                <div class="press-img">
+                    <img src="assets/hero-vehicle-pull.jpg" alt="Anis Jay pulling a 4WD in a strength challenge"
+                        loading="lazy">
+                </div>
+                <div class="press-copy reveal">
+                    <div class="section-kicker">04 / AS SEEN IN</div>
+                    <span class="press-logo">HARIAN METRO · FEB 2025</span>
+                    <blockquote class="quote">The nickname "Jay" my father gave me comes from my idol, Jay Cutler.
+                    </blockquote>
+                    <p class="quote-ms">"Malah, gelaran 'Jay' yang diberikan oleh ayah juga berasal daripada idola saya
+                        itu." From <em>Anis Jay seronok uji had diri seorang wanita</em>.</p>
+                    <a class="btn btn-outline"
+                        href="https://www.hmetro.com.my/mutakhir/2025/02/1183306/anis-jay-seronok-uji-had-diri-seorang-wanita"
+                        target="_blank" rel="noopener">READ THE ARTICLE ↗</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- COLLAB -->
+        <section id="collab">
+            <div class="container">
+                <div class="collab-intro reveal">
+                    <div>
+                        <div class="section-kicker">05 / OPEN FOR PR &amp; BRAND COLLAB 💌</div>
+                        <h2 class="section-title">YOUR BRAND.<br><span class="accent">MY ENERGY.</span></h2>
+                    </div>
+                    <p class="section-text">Jay reaches <strong>172K TikTok followers</strong> across fitness, beauty
+                        and wellness, with an audience of young Malaysians. The best collabs don't feel like ads, and
+                        she makes content that fits in naturally.</p>
+                </div>
+                <div class="collab-services">
+                    <div class="service reveal">
+                        <div class="service-index">01 /</div>
+                        <h3>SPONSORED<br>TIKTOKS</h3>
+                        <p>Short-form videos in Jay's own voice, mostly Malay and English, made for the FYP.</p>
+                    </div>
+                    <div class="service reveal">
+                        <div class="service-index">02 /</div>
+                        <h3>BEAUTY &amp;<br>WELLNESS UGC</h3>
+                        <p>Product content for skincare, supplements, activewear and pharmacy brands.</p>
+                    </div>
+                    <div class="service reveal">
+                        <div class="service-index">03 /</div>
+                        <h3>CAMPAIGNS &amp;<br>EVENTS</h3>
+                        <p>Seeding campaigns, launches and fitness activations in Johor and beyond.</p>
+                    </div>
+                </div>
+                <div class="brands reveal">
+                    <small>BRANDS ON JAY'S CHANNELS</small>
+                    <span class="brand">Shopee</span>
+                    <span class="brand">PMG Pharmacy</span>
+                    <span class="brand">OxyMy</span>
+                    <span class="brand">Anytime Fitness</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-kicker">06 / GET IN TOUCH</div>
+                <h2 class="section-title">LET'S MAKE<br>IT <span style="color:#fff">MOVE.</span></h2>
+                <div class="contact-layout">
+                    <div>
+                        <p class="contact-copy">Booking a training session or pitching a campaign? Send a few details
+                            and it'll open straight in WhatsApp.</p>
+                        <div class="contact-lines">
+                            <a href="https://wa.me/60187911624" target="_blank" rel="noopener"><span><small>WHATSAPP</small><br>018-791
+                                    1624</span><span>↗</span></a>
+                            <a href="https://www.tiktok.com/@jayzskywalker" target="_blank"
+                                rel="noopener"><span><small>TIKTOK</small><br>@jayzskywalker</span><span>↗</span></a>
+                            <a href="https://www.instagram.com/jayzskywalker" target="_blank"
+                                rel="noopener"><span><small>INSTAGRAM</small><br>@jayzskywalker</span><span>↗</span></a>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <input name="name" placeholder="YOUR NAME / BRAND *" aria-label="Your name or brand" required
+                            autocomplete="name">
+                        <select name="type" aria-label="Enquiry type">
+                            <option value="Personal training">PERSONAL TRAINING</option>
+                            <option value="Brand collab / PR">BRAND COLLAB / PR</option>
+                            <option value="Sponsored TikTok">SPONSORED TIKTOK</option>
+                            <option value="Event / appearance">EVENT / APPEARANCE</option>
+                            <option value="Other">OTHER</option>
+                        </select>
+                        <textarea name="message" rows="4" placeholder="TELL ME YOUR GOAL OR CAMPAIGN *"
+                            aria-label="Your goal or campaign details" required></textarea>
+                        <button class="btn btn-black" type="submit">SEND VIA WHATSAPP ↗</button>
+                        <div class="form-note">Opens WhatsApp with your message pre-filled. Nothing is stored on this
+                            website.</div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-layout">
+            <a class="logo" href="#home">ANIS JAY<span class="dot">.</span></a>
+            <div class="socials">
+                <a href="https://www.tiktok.com/@jayzskywalker" target="_blank" rel="noopener">TikTok ↗</a>
+                <a href="https://www.instagram.com/jayzskywalker" target="_blank" rel="noopener">Instagram ↗</a>
+                <a href="https://www.threads.com/@jayzskywalker" target="_blank" rel="noopener">Threads ↗</a>
+                <a href="https://wa.me/60187911624" target="_blank" rel="noopener">WhatsApp ↗</a>
+            </div>
+            <p class="disclaimer">© 2026 ANIS JAY (@JAYZSKYWALKER). Hero &amp; press photo © Harian Metro. Other
+                photos from Jay's Instagram.</p>
+        </div>
+    </footer>
+
+    <a class="wa-float" id="waFloat" href="https://wa.me/60187911624?text=Hi%20Jay!" target="_blank" rel="noopener"
+        aria-label="Chat with Jay on WhatsApp">
+        <svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true">
+            <path
+                d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4c-1-1.6-1.5-3.4-1.5-5.2 0-5.4 4.4-9.8 9.8-9.8 2.6 0 5.1 1 6.9 2.9 1.9 1.9 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2C18.1 1.3 15.2.1 12 .1 5.5.1.2 5.4.2 11.9c0 2.1.5 4.1 1.6 5.9L.1 24l6.3-1.7c1.7.9 3.7 1.4 5.6 1.4 6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.4-8.3z" />
+        </svg>
+    </a>
+
+    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Instagram reel">
+        <div class="modal-box">
+            <button class="modal-close" aria-label="Close video">×</button>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script>
+        const WA = '60187911624';
+        const toggle = document.querySelector('.menu-toggle'), nav = document.getElementById('nav');
+        const setNav = open => { nav.classList.toggle('open', open); toggle.setAttribute('aria-expanded', open); toggle.textContent = open ? '×' : '☰' };
+        toggle.addEventListener('click', () => setNav(!nav.classList.contains('open')));
+        nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setNav(false)));
+
+        // Reveal on scroll
+        const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target) } }), { threshold: .12 });
+        document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+        // Lazy-load TikTok creator embed when near viewport
+        const tt = document.getElementById('tiktokBox');
+        const ttIO = new IntersectionObserver(es => {
+            if (es[0].isIntersecting) {
+                const s = document.createElement('script'); s.src = 'https://www.tiktok.com/embed.js'; s.async = true; document.body.appendChild(s); ttIO.disconnect()
+            }
+        }, { rootMargin: '400px' });
+        ttIO.observe(tt);
+
+        // Floating WhatsApp button after hero
+        const wa = document.getElementById('waFloat'), hero = document.getElementById('home'), contact = document.getElementById('contact');
+        let pastHero = false, atContact = false;
+        const upd = () => wa.classList.toggle('show', pastHero && !atContact);
+        new IntersectionObserver(es => { pastHero = !es[0].isIntersecting; upd() }).observe(hero);
+        new IntersectionObserver(es => { atContact = es[0].isIntersecting; upd() }, { threshold: .2 }).observe(contact);
+
+        // Instagram reel modal
+        const modal = document.getElementById('modal'), body = document.getElementById('modalBody');
+        let lastFocus;
+        function openReel(code) {
+            lastFocus = document.activeElement;
+            body.innerHTML = '<iframe src="https://www.instagram.com/reel/' + code + '/embed/" title="Instagram reel by @jayzskywalker" allowfullscreen loading="lazy"></iframe>';
+            modal.classList.add('open'); document.body.style.overflow = 'hidden'; modal.querySelector('.modal-close').focus()
+        }
+        function closeModal() { if (!modal.classList.contains('open')) return; modal.classList.remove('open'); body.innerHTML = ''; document.body.style.overflow = ''; lastFocus && lastFocus.focus() }
+        document.querySelectorAll('[data-reel]').forEach(b => b.addEventListener('click', () => openReel(b.dataset.reel)));
+        modal.querySelector('.modal-close').addEventListener('click', closeModal);
+        modal.addEventListener('click', e => { if (e.target === modal) closeModal() });
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeModal(); setNav(false) } });
+
+        // Contact form -> WhatsApp
+        document.getElementById('contactForm').addEventListener('submit', e => {
+            e.preventDefault();
+            const d = new FormData(e.currentTarget);
+            const msg = 'Hi Jay! 👋\n\nName / Brand: ' + d.get('name') + '\nEnquiry: ' + d.get('type') + '\n\n' + d.get('message') + '\n\n(sent from your website)';
+            window.open('https://wa.me/' + WA + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+        });
+    </script>
+</body>
+
+</html>
